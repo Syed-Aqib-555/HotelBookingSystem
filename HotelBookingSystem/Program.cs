@@ -26,7 +26,6 @@ builder.Services.AddScoped<PaymentService>();
 builder.Services.AddScoped<AuthenticationStateProvider, AppAuthenticationStateProvider>();
 
 var app = builder.Build();
-
 await DatabaseSeeder.SeedAsync(app.Services);
 
 if (!app.Environment.IsDevelopment())
