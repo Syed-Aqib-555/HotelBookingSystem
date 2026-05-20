@@ -135,7 +135,6 @@ public class RoomRepository : EfRepository<Room>, IRoomRepository
             .Take(count)
             .ToListAsync();
     }
-
     public async Task AddReviewAsync(Review review)
     {
         DbContext.Reviews.Add(review);
