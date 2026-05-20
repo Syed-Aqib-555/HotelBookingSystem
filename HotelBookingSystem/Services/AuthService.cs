@@ -100,7 +100,6 @@ public class AuthService
 
         return new ClaimsPrincipal(new ClaimsIdentity(claims, "HotelBookingSession"));
     }
-
     public static string HashPassword(string password)
     {
         var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(password));
