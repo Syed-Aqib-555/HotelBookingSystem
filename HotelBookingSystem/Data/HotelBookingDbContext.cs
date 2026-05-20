@@ -69,7 +69,6 @@ public class HotelBookingDbContext : DbContext
             .WithOne(payment => payment.Booking)
             .HasForeignKey(payment => payment.BookingId)
             .OnDelete(DeleteBehavior.Cascade);
-
         foreach (var entityType in modelBuilder.Model.GetEntityTypes())
         {
             var createdAt = entityType.FindProperty(nameof(BaseEntity.CreatedAt));
