@@ -35,7 +35,6 @@ public class BookingRepository : EfRepository<Booking>, IBookingRepository
     {
         return WithDetails().FirstOrDefaultAsync(booking => booking.Id == id);
     }
-
     private IQueryable<Booking> WithDetails()
     {
         return DbContext.Bookings
