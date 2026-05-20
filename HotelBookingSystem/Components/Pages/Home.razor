@@ -123,7 +123,6 @@
         reviews = await RoomService.GetRecentReviewsAsync(4);
         metrics = await BookingService.GetDashboardMetricsAsync();
     }
-
     private void GoToRooms()
     {
         Navigation.NavigateTo("/rooms");
