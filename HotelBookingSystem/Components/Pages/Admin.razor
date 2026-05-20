@@ -108,7 +108,6 @@ else
     {
         await LoadAdminDataAsync();
     }
-
     private async Task LoadAdminDataAsync()
     {
         bookings = await BookingService.GetBookingsForAdminAsync();
