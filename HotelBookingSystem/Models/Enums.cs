@@ -23,7 +23,6 @@ public enum BookingStatus
     Completed = 4,
     Cancelled = 5
 }
-
 public enum PaymentStatus
 {
     Unpaid = 1,
