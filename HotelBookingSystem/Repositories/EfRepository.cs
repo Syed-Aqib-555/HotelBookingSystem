@@ -37,7 +37,6 @@ public class EfRepository<T> : IRepository<T> where T : BaseEntity
         DbSet.Update(entity);
         await DbContext.SaveChangesAsync();
     }
-
     public virtual async Task DeleteAsync(int id)
     {
         var entity = await DbSet.FindAsync(id);
