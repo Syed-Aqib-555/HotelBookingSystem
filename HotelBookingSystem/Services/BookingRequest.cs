@@ -28,7 +28,6 @@ public class BookingRequest : IValidatableObject
 
     [StringLength(500)]
     public string SpecialRequest { get; set; } = string.Empty;
-
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
     {
         if (CheckIn.Date < DateTime.Today)
