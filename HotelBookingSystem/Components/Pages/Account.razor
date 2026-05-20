@@ -150,7 +150,6 @@ else
         var result = await RoomService.AddReviewAsync(review);
         message = result.Message;
         messageClass = result.Success ? "alert-success" : "alert-danger";
-
         if (result.Success)
         {
             review = new Review
