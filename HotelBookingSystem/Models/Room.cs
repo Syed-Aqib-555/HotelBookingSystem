@@ -43,7 +43,6 @@ public class Room : BaseEntity
     public string Highlight { get; set; } = string.Empty;
 
     public bool IsActive { get; set; } = true;
-
     public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 
     [NotMapped]
