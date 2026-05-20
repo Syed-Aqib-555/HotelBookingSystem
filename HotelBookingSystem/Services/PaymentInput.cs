@@ -58,7 +58,6 @@ public class PaymentInput : IValidatableObject
             yield return new ValidationResult("Billing address is required for card payments.", new[] { nameof(BillingAddress) });
         }
     }
-
     private static bool IsValidExpiry(string value)
     {
         if (string.IsNullOrWhiteSpace(value) || value.Length != 5 || value[2] != '/')
