@@ -21,7 +21,6 @@ public class Review : BaseEntity
 
     [Required, StringLength(600)]
     public string Comment { get; set; } = string.Empty;
-
     public bool IsApproved { get; set; } = true;
 
     public override string GetDisplayName()
