@@ -964,6 +964,7 @@
     flex: 0 0 auto;
     width: auto;
   }
+
   .row-cols-xxl-1 > * {
     flex: 0 0 auto;
     width: 100%;
