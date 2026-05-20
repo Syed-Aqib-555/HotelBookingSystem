@@ -44,7 +44,6 @@ public class Booking : BaseEntity
     public PaymentStatus PaymentStatus { get; set; } = PaymentStatus.Unpaid;
 
     public ICollection<Payment> Payments { get; set; } = new List<Payment>();
-
     [NotMapped]
     public int Nights => Math.Max(1, (CheckOut.Date - CheckIn.Date).Days);
 
