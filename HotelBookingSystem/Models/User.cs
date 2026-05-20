@@ -21,7 +21,6 @@ public class User : BaseEntity
     public bool IsActive { get; set; } = true;
 
     public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
-
     public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public override string GetDisplayName()
