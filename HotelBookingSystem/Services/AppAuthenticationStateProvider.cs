@@ -16,7 +16,6 @@ public class AppAuthenticationStateProvider : AuthenticationStateProvider, IDisp
     {
         return Task.FromResult(new AuthenticationState(_authService.ToClaimsPrincipal()));
     }
-
     public void Dispose()
     {
         _authService.AuthStateChanged -= NotifyChanged;
