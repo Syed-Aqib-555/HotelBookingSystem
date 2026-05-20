@@ -22,7 +22,6 @@ public class Payment : BaseEntity
     public string TransactionReference { get; set; } = string.Empty;
 
     public DateTime PaidAt { get; set; } = DateTime.UtcNow;
-
     public override string GetDisplayName()
     {
         return $"{TransactionReference} - PKR {Amount:N0}";
