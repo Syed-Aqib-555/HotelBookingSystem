@@ -208,7 +208,6 @@ public static class DatabaseSeeder
             ImageUrl = imageUrl
         };
     }
-
     private static Review NewReview(Hotel hotel, User? user, int rating, string comment)
     {
         return new Review
