@@ -34,6 +34,5 @@ public class HotelPerformance
     public int Bookings { get; set; }
 
     public decimal Revenue { get; set; }
-
     public double Rating { get; set; }
 }
