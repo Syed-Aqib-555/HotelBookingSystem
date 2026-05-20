@@ -36,7 +36,6 @@ public class Hotel : BaseEntity
     [NotMapped]
     public string[] AmenityList => Amenities
         .Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
-
     public override string GetDisplayName()
     {
         return $"{Name}, {City}";
