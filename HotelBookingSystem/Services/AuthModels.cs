@@ -21,7 +21,6 @@ public class RegisterInput
 
     [Required, Phone, StringLength(25)]
     public string Phone { get; set; } = string.Empty;
-
     [Required, MinLength(6)]
     public string Password { get; set; } = string.Empty;
 
