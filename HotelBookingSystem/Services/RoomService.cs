@@ -2,7 +2,6 @@ using HotelBookingSystem.Models;
 using HotelBookingSystem.Repositories;
 
 namespace HotelBookingSystem.Services;
-
 public class RoomService
 {
     private readonly IRoomRepository _roomRepository;
