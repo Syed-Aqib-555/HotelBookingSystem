@@ -12,7 +12,6 @@ public interface IRoomRepository : IRepository<Room>
     Task<List<Room>> SearchAvailableRoomsAsync(RoomSearchFilter filter);
 
     Task<int> GetAvailableUnitsAsync(int roomId, DateTime checkIn, DateTime checkOut);
-
     Task<List<Review>> GetRecentReviewsAsync(int count = 6);
 
     Task AddReviewAsync(Review review);
