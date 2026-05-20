@@ -61,7 +61,6 @@ public class PaymentService
         {
             return $"TXN-{DateTime.UtcNow:yyyyMMddHHmmss}-{Random.Shared.Next(100, 999)}";
         }
-
         var digits = new string(input.CardNumber.Where(char.IsDigit).ToArray());
         var lastFour = digits.Length >= 4 ? digits[^4..] : "0000";
         return $"CARD-{lastFour}-{DateTime.UtcNow:HHmmss}";
