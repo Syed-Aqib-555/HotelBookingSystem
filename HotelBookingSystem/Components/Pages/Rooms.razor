@@ -250,6 +250,7 @@
             return;
         }
 
+
         bookingRequest.RoomUnits = 1;
         var (result, _) = await BookingService.CreateBookingAsync(bookingRequest, AuthService.CurrentUser);
         message = result.Message;
