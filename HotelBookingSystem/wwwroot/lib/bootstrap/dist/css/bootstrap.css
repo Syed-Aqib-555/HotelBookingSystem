@@ -2019,6 +2019,7 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 
+
 .table-light {
   --bs-table-color: #000;
   --bs-table-bg: #f8f9fa;
