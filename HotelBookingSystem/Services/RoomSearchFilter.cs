@@ -26,7 +26,6 @@ public class RoomSearchFilter : IValidatableObject
         {
             yield return new ValidationResult("Check-in date cannot be in the past.", new[] { nameof(CheckIn) });
         }
-
         if (CheckOut.Date <= CheckIn.Date)
         {
             yield return new ValidationResult("Check-out date must be after check-in.", new[] { nameof(CheckOut) });
